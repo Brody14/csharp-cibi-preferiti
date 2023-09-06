@@ -15,12 +15,13 @@ string median;
 
 if (cibiPreferiti.Length % 2 == 0)
 {
-    int length = cibiPreferiti.Length / 2;
-    median = ( cibiPreferiti[length - 1] + " " + cibiPreferiti[length] );
+    int firstMedianIndex = cibiPreferiti.Length / 2;
+    int secondMedianIndex = firstMedianIndex - 1;
+    median = ( cibiPreferiti[secondMedianIndex] + " " + cibiPreferiti[firstMedianIndex] );
 }else
 {
-    int length = cibiPreferiti.Length / 2;
-    median = cibiPreferiti[length];
+    int medianIndex = cibiPreferiti.Length / 2;
+    median = cibiPreferiti[medianIndex];
 
 }
 
